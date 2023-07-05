@@ -1,1 +1,1 @@
-Scripts for writing and manipulating text files
+Scripts for writing and manipulating file
