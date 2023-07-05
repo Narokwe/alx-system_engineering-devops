@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ls -aF1 | awk '{printf("%s%s,", ($0 == "." || $0 == ".." ? $0:$0 "/"))} END {print ""}}"
+ls -aF1 | awk '{printf("%s%s,", ($0 == "." || $0 == ".." ? $0:$0 "/"))} END {print ""}}
