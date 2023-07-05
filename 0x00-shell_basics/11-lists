@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "ls -al && (cd .. && ls -al ) && ls -al /boot"
