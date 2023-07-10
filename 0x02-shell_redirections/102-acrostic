@@ -1,3 +1,11 @@
 #!/bin/bash
+acrostic_text="
+Amazing things
+Come to those who wait
+Remember to be patient
+Only then will you see the reward
+Stay focused and never give up
+"
 
-decoded_message=$(awk '{printf "%s", substr($0,1,1)}' | tr -d '\n'; echo)
+decoded_message=$(echo "$acrostic_text" | awk '{print substr($0, 1, 1)}' | tr -d '\n')
+echo "$decoded_message"
