@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find . -type f -name "*.gif" -exec sh -c 'printf "%s\n" "${0%.*}"' {} \; | LC_ALL=C sort -f
+echo
