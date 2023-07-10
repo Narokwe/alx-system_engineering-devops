@@ -1,3 +1,2 @@
 #!/bin/bash
-
-awk -F'\t' '{count[$1]++} END {for (ip in count) printf "%s\t%s\n", count[ip], ip}' | sort -rn | head -n 11
+cut -f 1 log_file.tsv | sort | uniq -c | sort -rn | head -n 11
